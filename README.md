@@ -14,7 +14,7 @@ Affiliation : University of Texas at Arlington <br>
 
 The server being multi-threaded, handles multiple requests concurrently. The main thread ( server ), listens to a specified port like the standard port for HTTP (8080). Upon receiving a HTTP request, the server sets up a TCP connection to the requesting client and serves the request in a separate thread using a new port. After sending the response back to the client, it closes the connection. The server is assumed to work with HTTP GET messages. If the requested file exists at the server, it responds with a “HTTP/1.1 200 OK” together with the requested page to the client, otherwise it sends a corresponding error message, “HTTP/1.1 404 Not Found” or “HTTP/1.1 400 Bad Request”. <br>
 • If running the server program using command line, the syntax should be : <br>
-<p align="center"> server_code_name \< port_number > </p>
+<p align="center"> server_code_name \<port_number> </p>
 
 ### Specifications - Client
 
